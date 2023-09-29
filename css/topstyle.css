@@ -38,9 +38,10 @@ section{
 
 h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 48px;
     font-family: 'Archivo Black', sans-serif;
     margin-bottom: 50px;
+    color: #31294c;
 }
 
 .about-box{
@@ -66,6 +67,7 @@ h2{
     letter-spacing: 2px;
     text-align: center;
     margin-left: 35px;
+    color: #31294c;
 }
 
 .content-container{
@@ -92,6 +94,14 @@ h3{
     font-size: 16px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 100;
+    color: #31294c;
+    margin: 20px 0;
+}
+
+.content-box p{
+    color: #31294c;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .creator{
@@ -112,7 +122,9 @@ h3{
 h4{
     font-size: 36px;
     text-align: center;
+    font-family: 'Archivo Black', sans-serif;
     margin-bottom: 50px;
+    color: #31294c;
 }
 
 .creator-box img{
@@ -126,6 +138,7 @@ h4{
     letter-spacing: 2px;
     text-align: left;
     margin-left: 35px;
+    color: #31294c;
 }
 
 span{
@@ -135,6 +148,11 @@ span{
     font-weight: 600;
 }
 
-
+footer{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: #31294c;
+}
 
 

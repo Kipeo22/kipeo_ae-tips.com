@@ -8,13 +8,85 @@ body{
     background-color: #EDE2F3;
 }
 
+.wrap{
+    overflow: hidden;
+    position: relative;
+}
+
+.bg1{
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    top: 10%;
+    left: -200px;
+    transform: rotate(-95deg);
+}
+
+.bg2{
+    position: absolute;
+    width: 42%;
+    z-index: -1;
+    top: 38%;
+    right: -130px;
+}
+
+.bg3{
+    position: absolute;
+    width: 30%;
+    z-index: -1;
+    top: 20%;
+    right: -40px;
+}
+
+.bg4{
+    position: absolute;
+    width: 40%;
+    z-index: -1;
+    top: 33%;
+    left: -200px;
+}
+
+.bg5{
+    position: absolute;
+    width: 45%;
+    z-index: -1;
+    top: 60%;
+    right: -100px;
+    transform: rotate(90deg);
+}
+
+.bg6{
+    position: absolute;
+    width: 40%;
+    z-index: -1;
+    top: 70%;
+    left: -200px;
+}
+
+.bg7{
+    position: absolute;
+    width: 40%;
+    z-index: -1;
+    top: 83%;
+    right: -80px;
+}
+
+.bg8{
+    position: absolute;
+    width: 40%;
+    z-index: -1;
+    top: 93%;
+    left: -120px;
+}
+
 section{
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .firstview {
     position: relative;
 }
+
 
 .video-box {
     position: relative;
@@ -34,4 +106,204 @@ section{
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: -1;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    width: 750px;
+    margin: 250px auto;
+    padding: 30px 0;
+    color: #31294c;
+
+    position: relative;
+    border-top: solid 4px #5756BB;
+    border-bottom: solid 4px #5756BB;
+}
+
+h1:before, h1:after {
+    content: '';
+    position: absolute;
+    width: 4px;/*左右の線の幅*/
+    height: 100px;
+    background-color: #5756BB;/*左右の線の色*/
+  }
+
+  h1:before {/*左の線について*/
+    top: -30px;
+    left: 10px;
+  }
+
+  h1:after {/*右の線について*/
+    top: 30px;
+    right: 10px;
+  }
+  
+
+.step-box{
+    margin-bottom: 50px;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 150px;
+    color: #31294c;
+}
+
+.gallery{
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+    /* display: none; */
+}
+
+.gallery img{
+    width: 60%;
+    height: auto;
+    margin:0 auto;
+}
+
+li{
+    list-style: none;
+}
+
+.choice-btn{
+    width: 65%;
+    height: auto;
+    margin:0 auto;
+}
+
+.choice-btn li{
+    position: relative;
+}
+
+
+.choice-btn img{
+    width: 75%;
+    height: auto;
+    margin:0 auto 50px;
+}
+
+.choice-btn li img{
+	opacity: 0.4;/*選択されていないものは透過40%*/
+}
+
+.choice-btn li.slick-current img{
+	opacity: 1;/*選択されているものは透過しない*/
+}
+
+.choice-btn .slick-track {
+	transform: unset !important;/*画面幅サイズ変更に伴うサムネイル固定*/
+}
+
+.step-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.step-text-content{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 65%;
+    min-height: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    margin: 30px auto;
+    padding: 0 3% 0 6%;
+}
+
+h3{
+    font-size: 40px;
+    color: #f1f1f1;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    background-color: #5756BB;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(-50%)
+}
+
+.step-text p{
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #31294c;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.other-container{
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.other-box a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.other-img img{
+    width: 290px;
+}
+
+.other-img:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+h4{
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+    color: #31294c;
+    margin: 20px 0;
+}
+
+.other-box p{
+    color: #31294c;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.ToTop{
+    display: flex;
+    justify-content: center;
+}
+
+.ToTop a{
+    display: block;
+    text-decoration: none;
+    color: #f1f1f1;
+    background-color: #5756BB;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+    width: 215px;
+    height: 60px;
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: #31294c;
 }

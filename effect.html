@@ -18,139 +18,179 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="firstview">
-        <div class="video-box overlay">
-            <video class="video" muted autoplay loop playsinline>
-              <source src="videos/transitionA.mp4" type="video/mp4">
-            </video>
-        </div>
-    </section>
+    <div class="wrap">
+        <img src="images/bg1.svg" alt="" class="bg1">
+        <img src="images/bg2.svg" alt="" class="bg2">
+        <img src="images/bg3.svg" alt="" class="bg3">
+        <img src="images/bg4.svg" alt="" class="bg4">
+        <img src="images/bg1.svg" alt="" class="bg5">
+        <img src="images/bg4.svg" alt="" class="bg6">
+        <img src="images/bg4.svg" alt="" class="bg7">
+        <img src="images/bg3.svg" alt="" class="bg8">
 
-    <div class="title">
-        <p>エフェクトを使ったトランジション</p>
+        <section class="firstview">
+            <div class="video-box overlay">
+              <video class="video" muted autoplay loop playsinline>
+                <source src="videos/top.mp4" type="video/mp4">
+              </video>
+            </div>
+          </section>
+    
+    
+        <h1>エフェクトを使ったトランジション</h1>
+    
+        <section id="effect">
+            <div class="step-box">
+                <h2>STEP01</h2>
+                <ul class="gallery">
+                    <li><img src="images/a1-1.png" alt=""></li>
+                    <li><img src="images/a1-2.png" alt="" ></li>
+                    <li><img src="images/a1-3.png" alt="" ></li>
+                </ul>
+                <ul class="choice-btn">
+                    <li><img src="images/a1-1.png" alt=""></li>
+                    <li><img src="images/a1-2.png" alt="" ></li>
+                    <li><img src="images/a1-3.png" alt="" ></li>
+                </ul>
+    
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>01</h3>
+                        <p>最初はコンポジションを作成します。今回は1280px×720pxの30fps、デュレーションは5秒で作成します。
+                        (デュレーションはトランジションの前後のシーンの長さに合わせてお好みで変更してください)</p>
+                    </div>
+                    <p class="arrow sample5-2"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>02</h3>
+                        <p>まず、ホワイト平面を作成しその上にトランジションで繋ぎたい映像を並べておきます。
+                        今回は「トランジションscene1」と「TRANSITIONscene2」というテキストを使用しています。</p>
+                    </div>
+                    <p class="arrow sample5-2"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>03</h3>
+                        <p>ここでトランジション用の平面を２つ作っておきます。色はお好みで変更してください。ちなみにcmd+Yで簡単に作れます。</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="step-box">
+                <h2>STEP02</h2>
+                <ul class="gallery">
+                    <li><img src="images/a2-1.png" alt=""></li>
+                    <li><img src="images/a2-2.png" alt=""></li>
+                    <li><img src="images/a2-3.png" alt=""></li>
+                </ul>
+                <ul class="choice-btn">
+                    <li><img src="images/a2-1.png" alt=""></li>
+                    <li><img src="images/a2-2.png" alt=""></li>
+                    <li><img src="images/a2-3.png" alt=""></li>
+                </ul>
+    
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>01</h3>
+                        <p>3Dレイヤーにしているのでみやすいようにプレビューの画面を2画面変更し、片方をカスタムビュー1にします。
+                            奥行きを出すためにトランジション後の映像の位置のz座標を3000に変更し、大きさも500ほどに変更しておきます。
+                        </p>
+                    </div>
+                    <p class="arrow sample5-2"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>02</h3>
+                        <p>次にヌルオブジェクトを動かしていきます。ヌルオブジェクトにカメラが紐づいているのでヌルオブジェクトを
+                            動かすことでカメラも動いてくれます。基本的にカメラを扱うときはヌルオブジェクトを動かします。
+                            ヌルオブジェクトの位置にキーフレームを打っていきます。0秒地点で一度キーフレームを打ちます。
+                            2秒地点でトランジション後の映像が収まるようにz位置を移動させます。
+                            キーフレームを二つとも選択し(fn+)F9でイージーイーズをつけておきます。
+                        </p>
+                    </div>
+                    <p class="arrow sample5-2"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>03</h3>
+                        <p>
+                            イージーイーズをつけた後グラフエディタを開き画像のような曲線になるように黄色いバーを
+                            内側に引っ張ってください。この時右クリックを押し「速度グラフを編集」にチェックが
+                            入っていることを確認してください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="step-box">
+                <h2>STEP03</h2>
+                <ul class="gallery">
+                    <li><img src="images/a3-1.png" alt=""></li>
+                    <li><img src="images/a3-2.png" alt=""></li>
+                    <li><img src="images/a3-3.png" alt=""></li>
+                </ul>
+                <ul class="choice-btn">
+                    <li><img src="images/a3-1.png" alt=""></li>
+                    <li><img src="images/a3-2.png" alt=""></li>
+                    <li><img src="images/a3-3.png" alt=""></li>
+                </ul>
+    
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>01</h3>
+                        <p>ここからは少し調整をしていきます。トランジション後の映像の端が切れてしまい気になるので
+                            ここに少し手を加えていきます。エフェクトのスタイライズからモーションタイルを適応させてください。
+                            モーションタイルの「出力幅」と「出力高さ」の値を大きめに設定します。
+                            こうすることで見切れていた部分に映像が現れます。境界が気になる方は「ミラーエッジ」にチェックを入れると
+                            反転した状態で表示されます。
+                        </p>
+                    </div>
+                    <p class="arrow sample5-2"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>02</h3>
+                        <p>
+                            最後にテキストの先に映像がずっと表示されているので平面レイヤーを使って調整していきます。
+                            新規平面レイヤーを作成してください。色はお好みで変更してください。
+                            このレイヤーはトランジション後の映像の一つ上のレイヤーに置いてください。不透明度の値を変更し、
+                            だんだん見えるようにしていきます。0秒地点で100%、1秒10フレーム地点で0%になるようにキーフレームを打ちます。
+                            キーフレームを二つ選択し、イージーイーズをつけてください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="other">
+            <h2>OTHERS</h2>
+            <div class="other-container">
+                <div class="other-box">
+                    <a href="shape.html"></a>
+                    <div class="other-img">
+                        <img src="images/Ctopimg.png" alt="">
+                    </div>
+                    <h4>シェイプを使ったトランジション</h4>
+                    <p>所要時間　15分</p>
+                </div>
+                <div class="other-box">
+                    <a href="camera.html"></a>
+                    <div class="other-img">
+                        <img src="images/Btopimg.png" alt="">
+                    </div>
+                    <h4>シェイプを使ったトランジション</h4>
+                    <p>所要時間　15分</p>
+                </div>
+            </div>
+            <div class="ToTop">
+                <a href="index.html">TOPページに戻る</a>
+            </div>
+        </section>
+        <footer>
+            &copy; Kippeo Hasegawa
+        </footer>
     </div>
-
-    <section id="effect">
-        <div class="step-box">
-            <h2>STEP01</h2>
-            <ul class="gallery">
-                <li><img src="images/a1-1.png" alt=""></li>
-                <li><img src="images/a1-2.png" alt=""></li>
-                <li><img src="images/a1-3.png" alt=""></li>
-            </ul>
-            <ul class="choice-btn">
-                <li><img src="images/a1-1.png" alt=""></li>
-                <li><img src="images/a1-2.png" alt=""></li>
-                <li><img src="images/a1-3.png" alt=""></li>
-            </ul>
-
-            <div class="step-text">
-                <h3>01</h3>
-                <p>最初はコンポジションを作成します。今回は1280px×720pxの30fps、デュレーションは5秒で作成します。
-                    (デュレーションはトランジションの前後のシーンの長さに合わせてお好みで変更してください)</p>
-                <p class="arrow sample5-2"></p>
-            </div>
-            <div class="step-text">
-                <h3>02</h3>
-                <p>まず、ホワイト平面を作成しその上にトランジションで繋ぎたい映像を並べておきます。
-                    今回は「トランジションscene1」と「TRANSITIONscene2」というテキストを使用しています。</p>
-                <p class="arrow sample5-2"></p>
-            </div>
-            <div class="step-text">
-                <h3>03</h3>
-                <p>ここでトランジション用の平面を２つ作っておきます。色はお好みで変更してください。ちなみにcmd+Yで簡単に作れます。</p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <h2>STEP02</h2>
-            <ul class="gallery">
-                <li><img src="images/a2-1.png" alt=""></li>
-                <li><img src="images/a2-2.png" alt=""></li>
-                <li><img src="images/a2-3.png" alt=""></li>
-            </ul>
-            <ul class="choice-btn">
-                <li><img src="images/a2-1.png" alt=""></li>
-                <li><img src="images/a2-2.png" alt=""></li>
-                <li><img src="images/a2-3.png" alt=""></li>
-            </ul>
-
-            <div class="step-text">
-                <h3>01</h3>
-                <p>最初はコンポジションを作成します。今回は1280px×720pxの30fps、デュレーションは5秒で作成します。
-                    (デュレーションはトランジションの前後のシーンの長さに合わせてお好みで変更してください)</p>
-                <p class="arrow sample5-2"></p>
-            </div>
-            <div class="step-text">
-                <h3>02</h3>
-                <p>まず、ホワイト平面を作成しその上にトランジションで繋ぎたい映像を並べておきます。
-                    今回は「トランジションscene1」と「TRANSITIONscene2」というテキストを使用しています。</p>
-                <p class="arrow sample5-2"></p>
-            </div>
-            <div class="step-text">
-                <h3>03</h3>
-                <p>ここでトランジション用の平面を２つ作っておきます。色はお好みで変更してください。ちなみにcmd+Yで簡単に作れます。</p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <h2>STEP03</h2>
-            <ul class="gallery">
-                <li><img src="images/a3-1.png" alt=""></li>
-                <li><img src="images/a3-2.png" alt=""></li>
-                <li><img src="images/a3-3.png" alt=""></li>
-            </ul>
-            <ul class="choice-btn">
-                <li><img src="images/a3-1.png" alt=""></li>
-                <li><img src="images/a3-2.png" alt=""></li>
-                <li><img src="images/a3-3.png" alt=""></li>
-            </ul>
-
-            <div class="step-text">
-                <h3>01</h3>
-                <p>最初はコンポジションを作成します。今回は1280px×720pxの30fps、デュレーションは5秒で作成します。
-                    (デュレーションはトランジションの前後のシーンの長さに合わせてお好みで変更してください)</p>
-                <p class="arrow sample5-2"></p>
-            </div>
-            <div class="step-text">
-                <h3>02</h3>
-                <p>まず、ホワイト平面を作成しその上にトランジションで繋ぎたい映像を並べておきます。
-                    今回は「トランジションscene1」と「TRANSITIONscene2」というテキストを使用しています。</p>
-                <p class="arrow sample5-2"></p>
-            </div>
-            <div class="step-text">
-                <h3>03</h3>
-                <p>ここでトランジション用の平面を２つ作っておきます。色はお好みで変更してください。ちなみにcmd+Yで簡単に作れます。</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="other">
-        <h2>OTHERS</h2>
-        <div class="other-container">
-            <div class="other-box">
-                <a href="shape.html"></a>
-                <div class="ohter-img">
-                    <img src="images/Ctopimg.png" alt="">
-                </div>
-                <h4>シェイプを使ったトランジション</h4>
-                <p>所要時間　15分</p>
-            </div>
-            <div class="other-box">
-                <a href="camera.html"></a>
-                <div class="ohter-img">
-                    <img src="images/Btopimg.png" alt="">
-                </div>
-                <h4>シェイプを使ったトランジション</h4>
-                <p>所要時間　15分</p>
-            </div>
-        </div>
-        <div class="ToTop">
-            <a href="index.html">TOPページに戻る</a>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; Kippeo Hasegawa</p>
-    </footer>
+    
 </body>
 </html>
