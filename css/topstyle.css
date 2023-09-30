@@ -35,8 +35,13 @@ section{
     margin-bottom: 120px;
 }
 
+
+
 .firstview {
     position: relative;
+
+    margin: 0 auto 100px;
+    width: 100%;
 }
 
 .scrolldown2{
@@ -102,7 +107,7 @@ section{
 	left:0;
     /*線の形状*/
 	width:2px;
-	height: 300px;
+    height: 300px;
 	background:#f1f1f1;
 }
 
@@ -110,8 +115,10 @@ section{
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background: rgba(0, 0, 0, 0.3);
+    padding-top: 56.25%;
+    /* background-size: cover; */
 }
 
 .video {
@@ -131,6 +138,7 @@ h2{
     font-size: 48px;
     font-family: 'Archivo Black', sans-serif;
     margin-bottom: 50px;
+    margin-top: 50px;
     color: #31294c;
 }
 
@@ -138,16 +146,21 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .about-box img{
-    width: 500px;
-    height: 280px;
+    max-width: 500px;
+    width: 100%;
+    /* height: 280px; */
+    margin:0 15px;
 }
 
 .about-text{
     align-items: center;
     width: 500px;
+    margin:0 15px;
 }
 
 .about-text p{
@@ -156,7 +169,6 @@ h2{
     line-height: 35px;
     letter-spacing: 2px;
     text-align: center;
-    margin-left: 35px;
     color: #31294c;
 }
 
@@ -164,6 +176,7 @@ h2{
     display: flex;
     gap: 100px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 a{
@@ -196,7 +209,7 @@ h3{
 
 .creator{
     margin: 10px 10% 0;
-    padding: 50px 10%;
+    padding: 50px 0px;
     background: #f1f1f1;
     position: relative;
     z-index: 1;
@@ -206,7 +219,8 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 130px;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 h4{
@@ -218,7 +232,8 @@ h4{
 }
 
 .creator-box img{
-   width: 30%;
+    max-width: 300px;
+    width: 100%;
 }
 
 .creator-text p{
@@ -227,8 +242,9 @@ h4{
     line-height: 45px;
     letter-spacing: 2px;
     text-align: left;
-    margin-left: 35px;
     color: #31294c;
+    max-width: 400px; 
+    width: 100%;
 }
 
 span{
@@ -246,3 +262,63 @@ footer{
 }
 
 
+@media all and (max-width:770px){
+    .content-container{
+        gap: 60px;
+    }
+
+
+
+    .creator-box img{
+        padding: 0 20px;
+    }
+
+
+}
+
+
+@media all and (max-width:480px) {
+    h2{
+        font-size: 24px;
+    }
+
+    .about-text p{
+        font-size: 14px;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    .content-box p{
+        font-size: 12px;
+    }
+
+    .content-container{
+        gap: 40px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    .creator-text{
+        padding: 0 20px;
+    }
+
+    .creator-text p{
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .creator-text span{
+        font-size: 14px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+    
+}
+  
