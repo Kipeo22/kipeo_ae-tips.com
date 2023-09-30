@@ -220,7 +220,7 @@ h3{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 100px;
 }
 
 h4{
@@ -300,6 +300,10 @@ footer{
 
     h4{
         font-size: 20px;
+    }
+
+    .creator-box{
+        gap: 30px;
     }
 
     .creator-text{
