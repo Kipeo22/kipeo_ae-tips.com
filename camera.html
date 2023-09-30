@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/slick.min.js"></script>
+    <script src="JS/main.js"></script>
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/pagestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <img src="images/bg1.svg" alt="" class="effect-bg1">
+        <img src="images/bg2.svg" alt="" class="effect-bg2">
+        <img src="images/bg3.svg" alt="" class="effect-bg3">
+        <img src="images/bg4.svg" alt="" class="effect-bg4">
+        <img src="images/bg1.svg" alt="" class="effect-bg5">
+        <img src="images/bg4.svg" alt="" class="effect-bg6">
+        <img src="images/bg4.svg" alt="" class="effect-bg7">
+        <img src="images/bg3.svg" alt="" class="effect-bg8">
+
+        <section class="firstview">
+            <div class="video-box overlay">
+                <div class="scrolldown2"><span>Scroll</span></div>
+              <video class="video" muted autoplay loop playsinline>
+                <source src="videos/transitionB.mp4" type="video/mp4">
+              </video>
+            </div>
+          </section>
+          
+        <div class="LR">
+            <div class="TB">
+                <h1>カメラを使ったトランジション</h1>
+            </div>
+        </div>
+    
+        <section id="effect">
+            <div class="step-box">
+                <h2>STEP01</h2>
+                <ul class="gallery">
+                    <li><img src="images/b1-1.png" alt=""></li>
+                    <li><img src="images/b1-2.png" alt="" ></li>
+                    <li><img src="images/b1-3.png" alt="" ></li>
+                </ul>
+                <ul class="choice-btn">
+                    <li><img src="images/b1-1.png" alt=""><p>01</p></li>
+                    <li><img src="images/b1-2.png" alt="" ><p>02</p></li>
+                    <li><img src="images/b1-3.png" alt="" ><p>03</p></li>
+                </ul>
+    
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>01</h3>
+                        <p>最初はコンポジションを作成します。今回は1280px×720pxの30fps、デュレーションは5秒で作成します。
+                        (デュレーションはトランジションの前後のシーンの長さに合わせてお好みで変更してください)</p>
+                    </div>
+                    <p class="arrow arrow-shape"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>02</h3>
+                        <p>まずトランジション前の映像を用意してください。(画像では平面レイヤー)今回はテキストを使うので任意のテキストを一番上に置いてください。
+                            その後、トランジション後の映像を一番下のに置いてください。(画像では2-2という名前) トランジション後の映像のトラックマットをテキストに変更し、
+                            反転にチェックを入れてください。これでテキストの部分が切り抜かれた状態になりました。</p>
+                    </div>
+                    <p class="arrow arrow-shape"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>03</h3>
+                        <p>ここで今回のメインであるカメラを置いていきます。新規からカメラとヌルオブジェクトを作成します。
+                            カメラを使うときはヌルオブジェクトも一緒に作っておきましょう。このとき、カメラの親にヌルオブジェクトを設定しておきましょう。
+                            また、全てのレイヤーの3Dレイヤーにチェックを入れておきましょう。これで立体的にレイヤーを扱うことができます。</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="step-box">
+                <h2>STEP02</h2>
+                <ul class="gallery">
+                    <li><img src="images/b2-1.png" alt=""></li>
+                    <li><img src="images/b2-2.png" alt=""></li>
+                    <li><img src="images/b2-3.png" alt=""></li>
+                </ul>
+                <ul class="choice-btn">
+                    <li><img src="images/b2-1.png" alt=""><p>01</p></li>
+                    <li><img src="images/b2-2.png" alt=""><p>02</p></li>
+                    <li><img src="images/b2-3.png" alt=""><p>03</p></li>
+                </ul>
+    
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>01</h3>
+                        <p>3Dレイヤーにしているのでみやすいようにプレビューの画面を2画面変更し、片方をカスタムビュー1にします。
+                            奥行きを出すためにトランジション後の映像の位置のz座標を3000に変更し、大きさも500ほどに変更しておきます。
+                        </p>
+                    </div>
+                    <p class="arrow arrow-shape"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>02</h3>
+                        <p>次にヌルオブジェクトを動かしていきます。ヌルオブジェクトにカメラが紐づいているのでヌルオブジェクトを動かすことでカメラも動いてくれます。
+                            基本的にカメラを扱うときはヌルオブジェクトを動かします。ヌルオブジェクトの位置にキーフレームを打っていきます。
+                            0秒地点で一度キーフレームを打ちます。2秒地点でトランジション後の映像が収まるようにz位置を移動させます。
+                            キーフレームを二つとも選択し(fn+)F9でイージーイーズをつけておきます。
+                        </p>
+                    </div>
+                    <p class="arrow arrow-shape"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>03</h3>
+                        <p>
+                            イージーイーズをつけた後グラフエディタを開き画像のような曲線になるように黄色いバーを内側に引っ張ってください。
+                            この時右クリックを押し「速度グラフを編集」にチェックが入っていることを確認してください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="step-box">
+                <h2>STEP03</h2>
+                <ul class="gallery">
+                    <li><img src="images/b3-1.png" alt=""></li>
+                    <li><img src="images/b3-2.png" alt=""></li>
+                    <li><img src="images/b3-3.png" alt=""></li>
+                </ul>
+                <ul class="choice-btn">
+                    <li><img src="images/b3-1.png" alt=""><p>01</p></li>
+                    <li><img src="images/b3-2.png" alt=""><p>02</p></li>
+                    <li><img src="images/b3-3.png" alt=""><p>03</p></li>
+                </ul>
+    
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>01</h3>
+                        <p>ここからは少し調整をしていきます。トランジション後の映像の端が切れてしまい気になるのでここに少し手を加えていきます。
+                            エフェクトのスタイライズからモーションタイルを適応させてください。モーションタイルの「出力幅」と「出力高さ」の値を大きめに設定します。
+                            こうすることで見切れていた部分に映像が現れます。境界が気になる方は「ミラーエッジ」にチェックを入れると反転した状態で表示されます。
+                        </p>
+                    </div>
+                    <p class="arrow arrow-shape"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>02</h3>
+                        <p>
+                            最後にテキストの先に映像がずっと表示されているので平面レイヤーを使って調整していきます。新規平面レイヤーを作成してください。
+                            色はお好みで変更してください。このレイヤーはトランジション後の映像の一つ上のレイヤーに置いてください。不透明度の値を変更し、
+                            だんだん見えるようにしていきます。0秒地点で100%、1秒10フレーム地点で0%になるようにキーフレームを打ちます。キーフレームを二つ選択し、
+                            イージーイーズをつけてください。
+                        </p>
+                    </div>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>03</h3>
+                        <p>こちらもグラフエディタを開き、今回は「値グラフを編集」にチェックが入っていることを確認し、画像のようなカーブになるように調整したら完成です。
+                        </p>
+                    </div>
+                    <p class="arrow arrow-shape"></p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="other">
+            <h2>OTHERS</h2>
+            <div class="other-container">
+                <div class="other-box">
+                    <a href="shape.html">
+                        <div class="other-img">
+                            <img src="images/Ctopimg.png" alt="">
+                        </div>
+                        <h4>シェイプを使ったトランジション</h4>
+                        <p>所要時間　15分</p>
+                    </a>
+                </div>
+                <div class="other-box">
+                    <a href="effect.html">
+                        <div class="other-img">
+                            <img src="images/Atopimg.png" alt="">
+                        </div>
+                        <h4>エフェクトを使ったトランジション</h4>
+                        <p>所要時間　15分</p>
+                    </a>
+                </div>
+            </div>
+            <div class="ToTop">
+                <a href="index.html">TOPページに戻る</a>
+            </div>
+        </section>
+        <footer>
+            &copy; Kippeo Hasegawa
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/slick.min.js"></script>
+    <script src="JS/main.js"></script>
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/pagestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <img src="images/bg1.svg" alt="" class="effect-bg1">
+        <img src="images/bg2.svg" alt="" class="effect-bg2">
+        <img src="images/bg3.svg" alt="" class="effect-bg3">
+        <img src="images/bg4.svg" alt="" class="effect-bg4">
+        <img src="images/bg1.svg" alt="" class="effect-bg5">
+        <img src="images/bg4.svg" alt="" class="effect-bg6">
+        <img src="images/bg4.svg" alt="" class="effect-bg7">
+        <img src="images/bg3.svg" alt="" class="effect-bg8">
+
+        <section class="firstview">
+            <div class="video-box overlay">
+                <div class="scrolldown2"><span>Scroll</span></div>
+              <video class="video" muted autoplay loop playsinline>
+                <source src="videos/transitionC.mp4" type="video/mp4">
+              </video>
+            </div>
+          </section>
+          
+        <div class="LR">
+            <div class="TB">
+                <h1>シェイプを使ったトランジション</h1>
+            </div>
+        </div>
+    
+        <section id="effect">
+            <div class="step-box">
+                <h2>STEP01</h2>
+                <ul class="gallery">
+                    <li><img src="images/c1-1.png" alt=""></li>
+                    <li><img src="images/c1-2.png" alt="" ></li>
+                </ul>
+                <ul class="choice-btn">
+                    <li><img src="images/c1-1.png" alt=""><p>01</p></li>
+                    <li><img src="images/c1-2.png" alt="" ><p>02</p></li>
+                </ul>
+    
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>01</h3>
+                        <p>最初はコンポジションを作成します。今回は1280px×720pxの30fps、デュレーションは5秒で作成します。
+                        (デュレーションはトランジションの前後のシーンの長さに合わせてお好みで変更してください)</p>
+                    </div>
+                    <p class="arrow arrow-shape"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>02</h3>
+                        <p>まず、ホワイト平面を作成しその上にトランジションで繋ぎたい映像を並べておきます。今回は「トランジションscene1」と
+                            「TRANSITIONscene2」というテキストを使用しています。一番上のレイヤーにペンツールを使い直線を線幅120pxで長めに作っておきます。
+                            この時アンカーポイントがコンテンツの中央に来るように来るように調整しておきましょう。</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="step-box">
+                <h2>STEP02</h2>
+                <ul class="gallery">
+                    <li><img src="images/c2-1.png" alt=""></li>
+                    <li><img src="images/c2-2.png" alt=""></li>
+                    <li><img src="images/c2-3.png" alt=""></li>
+                </ul>
+                <ul class="choice-btn">
+                    <li><img src="images/a2-1.png" alt=""><p>01</p></li>
+                    <li><img src="images/a2-2.png" alt=""><p>02</p></li>
+                    <li><img src="images/a2-3.png" alt=""><p>03</p></li>
+                </ul>
+    
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>01</h3>
+                        <p>シェイプレイヤーの中の「コンテンツ」の横にある「追加」から「パスのトリミング」を選択します。パスのトリミングは、
+                            モーショングラフィックスでもよく使われているので覚えておくと便利です。
+                        </p>
+                    </div>
+                    <p class="arrow arrow-shape"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>02</h3>
+                        <p>まず、「パスのトリミング」の「終了点」にキーフレームを打っていきます。映像が切り替わる少し前の地点で0%、
+                            そこから5フレームほど進めた地点で100%にします。「開始点」も同様にキーフレームを打っていきます。
+                            映像が切り替わった少し後の地点で、0%、そこから5フレームほど進めた地点で100%にします。イージーイーズもつけておきましょう。
+                            (fn+)F9
+                        </p>
+                    </div>
+                    <p class="arrow arrow-shape"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>03</h3>
+                        <p>
+                            見た目を整えるために端を丸型にします。シェイプの中の「線」から線端をを「丸型」に変更します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="step-box">
+                <h2>STEP03</h2>
+                <ul class="gallery">
+                    <li><img src="images/c3-1.png" alt=""></li>
+                    <li><img src="images/c3-2.png" alt=""></li>
+                    <li><img src="images/c3-3.png" alt=""></li>
+                </ul>
+                <ul class="choice-btn">
+                    <li><img src="images/c3-1.png" alt=""><p>01</p></li>
+                    <li><img src="images/c1-1.png" alt=""><p>02</p></li>
+                    <li><img src="images/c3-3.png" alt=""><p>03</p></li>
+                </ul>
+    
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>01</h3>
+                        <p>STEP02で作成したシェイプレイヤーを複製し、合計６つのシェイプレイヤーを作成します。
+                            複製したシェイプをを画面全体が隠れるように並べます。先に一番上と一番下を揃えた後、シェイプを全て選択し、
+                            「垂直方向に均等配置」をすることで簡単に揃えることができます。この時色も変えておきましょう。
+                        </p>
+                    </div>
+                    <p class="arrow arrow-shape"></p>
+                </div>
+                <div class="step-text">
+                    <div class="step-text-content">
+                        <h3>02</h3>
+                        <p>
+                            シェイプを全て選択し、キーボードの「U」をおして、キーフレームを表示させます。ここではタイミングをずらしてきます。
+                            画像のように任意のキーフレームを選びタイミングをずらしていきます。ばらつきがあるとランダム感が増してようなります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="other">
+            <h2>OTHERS</h2>
+            <div class="other-container">
+                <div class="other-box">
+                    <a href="camera.html">
+                        <div class="other-img">
+                            <img src="images/Btopimg.png" alt="">
+                        </div>
+                        <h4>カメラを使ったトランジション</h4>
+                        <p>所要時間　15分</p>
+                    </a>
+                </div>
+                <div class="other-box">
+                    <a href="effect.html">
+                        <div class="other-img">
+                            <img src="images/Atopimg.png" alt="">
+                        </div>
+                        <h4>エフェクトを使ったトランジション</h4>
+                        <p>所要時間　15分</p>
+                    </a>
+                </div>
+            </div>
+            <div class="ToTop">
+                <a href="index.html">TOPページに戻る</a>
+            </div>
+        </section>
+        <footer>
+            &copy; Kippeo Hasegawa
+        </footer>
+    </div>
+    
+</body>
+</html>

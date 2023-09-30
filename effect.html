@@ -19,25 +19,29 @@
 </head>
 <body>
     <div class="wrap">
-        <img src="images/bg1.svg" alt="" class="bg1">
-        <img src="images/bg2.svg" alt="" class="bg2">
-        <img src="images/bg3.svg" alt="" class="bg3">
-        <img src="images/bg4.svg" alt="" class="bg4">
-        <img src="images/bg1.svg" alt="" class="bg5">
-        <img src="images/bg4.svg" alt="" class="bg6">
-        <img src="images/bg4.svg" alt="" class="bg7">
-        <img src="images/bg3.svg" alt="" class="bg8">
+        <img src="images/bg1.svg" alt="" class="effect-bg1">
+        <img src="images/bg2.svg" alt="" class="effect-bg2">
+        <img src="images/bg3.svg" alt="" class="effect-bg3">
+        <img src="images/bg4.svg" alt="" class="effect-bg4">
+        <img src="images/bg1.svg" alt="" class="effect-bg5">
+        <img src="images/bg4.svg" alt="" class="effect-bg6">
+        <img src="images/bg4.svg" alt="" class="effect-bg7">
+        <img src="images/bg3.svg" alt="" class="effect-bg8">
 
         <section class="firstview">
             <div class="video-box overlay">
+            <div class="scrolldown2"><span>Scroll</span></div>
               <video class="video" muted autoplay loop playsinline>
                 <source src="videos/top.mp4" type="video/mp4">
               </video>
             </div>
           </section>
-    
-    
-        <h1>エフェクトを使ったトランジション</h1>
+          
+        <div class="LR">
+            <div class="TB">
+                <h1>エフェクトを使ったトランジション</h1>
+            </div>
+        </div>
     
         <section id="effect">
             <div class="step-box">
@@ -48,9 +52,9 @@
                     <li><img src="images/a1-3.png" alt="" ></li>
                 </ul>
                 <ul class="choice-btn">
-                    <li><img src="images/a1-1.png" alt=""></li>
-                    <li><img src="images/a1-2.png" alt="" ></li>
-                    <li><img src="images/a1-3.png" alt="" ></li>
+                    <li><img src="images/a1-1.png" alt=""><p>01</p></li>
+                    <li><img src="images/a1-2.png" alt="" ><p>02</p></li>
+                    <li><img src="images/a1-3.png" alt="" ><p>03</p></li>
                 </ul>
     
                 <div class="step-text">
@@ -59,7 +63,7 @@
                         <p>最初はコンポジションを作成します。今回は1280px×720pxの30fps、デュレーションは5秒で作成します。
                         (デュレーションはトランジションの前後のシーンの長さに合わせてお好みで変更してください)</p>
                     </div>
-                    <p class="arrow sample5-2"></p>
+                    <p class="arrow arrow-shape"></p>
                 </div>
                 <div class="step-text">
                     <div class="step-text-content">
@@ -67,7 +71,7 @@
                         <p>まず、ホワイト平面を作成しその上にトランジションで繋ぎたい映像を並べておきます。
                         今回は「トランジションscene1」と「TRANSITIONscene2」というテキストを使用しています。</p>
                     </div>
-                    <p class="arrow sample5-2"></p>
+                    <p class="arrow arrow-shape"></p>
                 </div>
                 <div class="step-text">
                     <div class="step-text-content">
@@ -85,39 +89,40 @@
                     <li><img src="images/a2-3.png" alt=""></li>
                 </ul>
                 <ul class="choice-btn">
-                    <li><img src="images/a2-1.png" alt=""></li>
-                    <li><img src="images/a2-2.png" alt=""></li>
-                    <li><img src="images/a2-3.png" alt=""></li>
+                    <li><img src="images/a2-1.png" alt=""><p>01</p></li>
+                    <li><img src="images/a2-2.png" alt=""><p>02</p></li>
+                    <li><img src="images/a2-3.png" alt=""><p>03</p></li>
                 </ul>
     
                 <div class="step-text">
                     <div class="step-text-content">
                         <h3>01</h3>
-                        <p>3Dレイヤーにしているのでみやすいようにプレビューの画面を2画面変更し、片方をカスタムビュー1にします。
-                            奥行きを出すためにトランジション後の映像の位置のz座標を3000に変更し、大きさも500ほどに変更しておきます。
+                        <p>エフェクトのトランジションからCC Grid Wipeを一番上の平面レイヤーに適応します。
+                            最初に「reverse transiton」にチェックを入れておきます。次に「Competiton」に
+                            キーフレームを打っていきます。1秒地点で100%、2秒地点で0%となるようにキーフレームを打ちます。
+                            (fn+)F9でイージーイーズもつけておきましょう。
                         </p>
                     </div>
-                    <p class="arrow sample5-2"></p>
+                    <p class="arrow arrow-shape"></p>
                 </div>
                 <div class="step-text">
                     <div class="step-text-content">
                         <h3>02</h3>
-                        <p>次にヌルオブジェクトを動かしていきます。ヌルオブジェクトにカメラが紐づいているのでヌルオブジェクトを
-                            動かすことでカメラも動いてくれます。基本的にカメラを扱うときはヌルオブジェクトを動かします。
-                            ヌルオブジェクトの位置にキーフレームを打っていきます。0秒地点で一度キーフレームを打ちます。
-                            2秒地点でトランジション後の映像が収まるようにz位置を移動させます。
-                            キーフレームを二つとも選択し(fn+)F9でイージーイーズをつけておきます。
+                        <p>ここで、もう一つエフェクトをつけていきます。エフェクトのトランジションからCC Jawsを
+                            先ほどのレイヤーに適応させます。「Height」を0%にしておくことで帯を平らにすることができます。
+                            こちらも「Competiton」にキーフレームを打っていきます。2秒から5フレーム前の地点で0%、
+                            そこから25フレーム後の地点で100%となるようキーフレームを打ちます。イージーイーズもつけておきましょう。
                         </p>
                     </div>
-                    <p class="arrow sample5-2"></p>
+                    <p class="arrow arrow-shape"></p>
                 </div>
                 <div class="step-text">
                     <div class="step-text-content">
                         <h3>03</h3>
                         <p>
-                            イージーイーズをつけた後グラフエディタを開き画像のような曲線になるように黄色いバーを
-                            内側に引っ張ってください。この時右クリックを押し「速度グラフを編集」にチェックが
-                            入っていることを確認してください。
+                            今回はグラフエディタも使ってみましょう。この際「値グラフを編集」にチェックが入っていることを確認してください。
+                            (グラフ上で左クリックで確認できます。)黄色いバーの角度を調節して画像のようなカーブになるように調整してみましょう。
+                            そうするとはじめは速く、終わりはゆっくりとしたアニメーションになります。
                         </p>
                     </div>
                 </div>
@@ -131,32 +136,27 @@
                     <li><img src="images/a3-3.png" alt=""></li>
                 </ul>
                 <ul class="choice-btn">
-                    <li><img src="images/a3-1.png" alt=""></li>
-                    <li><img src="images/a3-2.png" alt=""></li>
-                    <li><img src="images/a3-3.png" alt=""></li>
+                    <li><img src="images/a3-1.png" alt=""><p>01</p></li>
+                    <li><img src="images/a3-2.png" alt=""><p>02</p></li>
+                    <li><img src="images/a3-3.png" alt=""><p>03</p></li>
                 </ul>
     
                 <div class="step-text">
                     <div class="step-text-content">
                         <h3>01</h3>
-                        <p>ここからは少し調整をしていきます。トランジション後の映像の端が切れてしまい気になるので
-                            ここに少し手を加えていきます。エフェクトのスタイライズからモーションタイルを適応させてください。
-                            モーションタイルの「出力幅」と「出力高さ」の値を大きめに設定します。
-                            こうすることで見切れていた部分に映像が現れます。境界が気になる方は「ミラーエッジ」にチェックを入れると
-                            反転した状態で表示されます。
+                        <p>最後にもう一つアニメーションを加えておきましょう。
+                            一つ下の平面レイヤーに先程と同じようにエフェクトのトランジションからCC jawsを適応させましょう。
+                            「heignt」を0%にして、「Competiton」に先程と同じキーフレームを打ちます。この時、グラフエディタも同じように調整しておきましょう。
                         </p>
                     </div>
-                    <p class="arrow sample5-2"></p>
+                    <p class="arrow arrow-shape"></p>
                 </div>
                 <div class="step-text">
                     <div class="step-text-content">
                         <h3>02</h3>
                         <p>
-                            最後にテキストの先に映像がずっと表示されているので平面レイヤーを使って調整していきます。
-                            新規平面レイヤーを作成してください。色はお好みで変更してください。
-                            このレイヤーはトランジション後の映像の一つ上のレイヤーに置いてください。不透明度の値を変更し、
-                            だんだん見えるようにしていきます。0秒地点で100%、1秒10フレーム地点で0%になるようにキーフレームを打ちます。
-                            キーフレームを二つ選択し、イージーイーズをつけてください。
+                            キーフレームを２つ選択し、後ろに15フレームほどずらしておきましょう。トランジションの始め、
+                            下の平面レイヤーがかぶってしまっているので前半部分をカットしておきましょう。これで完成です。
                         </p>
                     </div>
                 </div>
@@ -167,20 +167,22 @@
             <h2>OTHERS</h2>
             <div class="other-container">
                 <div class="other-box">
-                    <a href="shape.html"></a>
-                    <div class="other-img">
-                        <img src="images/Ctopimg.png" alt="">
-                    </div>
-                    <h4>シェイプを使ったトランジション</h4>
-                    <p>所要時間　15分</p>
+                    <a href="shape.html">
+                        <div class="other-img">
+                            <img src="images/Ctopimg.png" alt="">
+                        </div>
+                        <h4>シェイプを使ったトランジション</h4>
+                        <p>所要時間　15分</p>
+                    </a>
                 </div>
                 <div class="other-box">
-                    <a href="camera.html"></a>
-                    <div class="other-img">
-                        <img src="images/Btopimg.png" alt="">
-                    </div>
-                    <h4>シェイプを使ったトランジション</h4>
-                    <p>所要時間　15分</p>
+                    <a href="camera.html">
+                        <div class="other-img">
+                            <img src="images/Btopimg.png" alt="">
+                        </div>
+                        <h4>カメラを使ったトランジション</h4>
+                        <p>所要時間　15分</p>
+                    </a>
                 </div>
             </div>
             <div class="ToTop">
