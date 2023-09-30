@@ -438,6 +438,7 @@ h4{
 }
 
 footer{
+    font-family: 'Noto Sans', sans-serif;
     text-align: center;
     font-size: 14px;
     padding-bottom: 20px;
@@ -455,6 +456,10 @@ footer{
         width: 50px;
         height: 50px;
         line-height: 50px;
+    }
+
+    .choice-btn p{
+        font-size: 18px;
     }
 
     .ToTop a{
@@ -491,8 +496,22 @@ footer{
         
     }
 
+    .choice-btn{
+        width: 85%;
+    }
+
+    .choice-btn img{
+        width: 90%;
+    }
+
+    .choice-btn p{
+        font-size: 14px;
+        left: 5.5px;
+    }
+
 
     .step-text-content{
+        width: 85%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -520,7 +539,9 @@ footer{
         line-height: 50px;
     }
 
-
+    footer{
+        font-size: 12px;
+    }
 
 
 }
