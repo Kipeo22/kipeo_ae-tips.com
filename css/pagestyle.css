@@ -93,6 +93,7 @@ section{
 	position:absolute;
 	bottom:10px;
 	right:10%;
+    height: 100%;
 }
 
 /*Scrollテキストの描写*/
@@ -131,7 +132,7 @@ section{
 
 /*下からの距離が変化して丸の全体が上から下に動く*/
 @keyframes circlemove{
-      0%{bottom:300px;}
+      0%{bottom:30%;}
      100%{bottom:-5px;}
  }
 
@@ -152,7 +153,7 @@ section{
 	left:0;
     /*線の形状*/
 	width:2px;
-	height: 300px;
+	height: 30%;
 	background:#f1f1f1;
 }
 
@@ -160,20 +161,26 @@ section{
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%;
     background: rgba(0, 0, 0, 0.3);
 }
 
 .video {
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    width: 100vw;
     z-index: -1;
+    vertical-align: bottom;
+}
+
+.video::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -182,14 +189,14 @@ h1{
     font-size: 36px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 800;
-    width: 750px;
+    width: 100%;
     padding: 30px 0;
     color: #31294c;
 }
 
 .LR{
     position: relative;
-    width: 750px;
+    width: 75%;
     margin: 250px auto;
 }
 
@@ -214,7 +221,7 @@ h1{
 
 .TB{
    position: relative;
-   width: 750px;
+   width: 100%;
 }
 
 .TB:before, .TB:after {
@@ -451,6 +458,26 @@ footer{
         margin-bottom: 30px;
     }
 
+    .scrolldown2 span{
+        font-size: 1.0rem;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .LR{
+        width: 80%;
+        margin: 150px auto;
+    }
+
+    .LR:before, .LR:after{
+        width: 50px;
+        height: 60px;
+    }
+
+    
+
     h3{
         font-size: 20px;
         width: 50px;
@@ -475,8 +502,93 @@ footer{
 }
 
 @media all and (max-width:480px){
+    .effect-bg1{
+        width: 70%;
+        top: 3%;
+        left: -30%;
+        
+    }
+    
+    .effect-bg2{
+        width: 70%;
+        top: 33%;
+        right: -25%;
+    }
+    
+    .effect-bg3{
+        width: 50%;
+        top: 10%;
+        right: -15%;
+    }
+    
+    .effect-bg4{
+        width: 70%;
+        top: 23%;
+        left: -20%;
+    }
+    
+    .effect-bg5{
+        width: 80%;
+        top:57%;
+        right: -100px;
+    }
+    
+    .effect-bg6{
+        top: 71%;
+        left: -10%;
+    }
+    
+    .effect-bg7{
+        width: 80%;
+        top: 78%;
+        right: -30%;
+    }
+    
+    .effect-bg8{
+        width: 70%;
+        top: 95%;
+        left: -30%;
+    }
+
+
+
+    .scrolldown2 span{
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+    }
+
     h1{
         font-size: 16px;
+    }
+
+    .LR{
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .TB:before, .TB:after {
+        width: 130px;
+        height: 60px;
+    }
+
+    .LR::before{
+        border-left: solid 3px #5756BB;
+        left: 40px;
+    }
+
+    .LR::after{
+        border-right: solid 3px #5756BB;
+        right: 40px;
+    }
+
+    .TB::before{
+        border-top: solid 3px #5756BB;
+        left: 20px;
+    }
+
+    .TB::after{
+        border-bottom: solid 3px #5756BB;
+        right: 20px;
     }
 
     h2{
