@@ -85,6 +85,8 @@ section{
 
 .firstview {
     position: relative;
+    margin: 0 auto 100px;
+    width: 100%;
 }
 
 .scrolldown2{
@@ -158,7 +160,7 @@ section{
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    padding-top: 56.25%;
     background: rgba(0, 0, 0, 0.3);
 }
 
@@ -386,6 +388,7 @@ h3{
     gap: 150px;
     justify-content: center;
     margin-bottom: 70px;
+    flex-wrap: wrap;
 }
 
 .other-box a{
@@ -426,11 +429,11 @@ h4{
     text-decoration: none;
     color: #f1f1f1;
     background-color: #5756BB;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 60px;
     text-align: center;
     width: 215px;
-    height: 60px;
+    /* padding: 5px 10px; */
 }
 
 footer{
@@ -438,4 +441,79 @@ footer{
     font-size: 14px;
     padding-bottom: 20px;
     color: #31294c;
+}
+
+
+@media all and (max-width:770px){
+    section{
+        margin-bottom: 50px;
+    }
+
+    h3{
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .ToTop a{
+        font-size: 16px;
+        width: 170px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+
+
+
+}
+
+@media all and (max-width:480px){
+    h1{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    
+    h3{
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .step-text-content{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .step-text p{
+        font-size: 12px;
+    }
+
+    .other-container{
+        gap: 40px;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    .other-box p{
+        font-size: 12px;
+    }
+
+    .ToTop a{
+        font-size: 12px;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+
+
+
 }

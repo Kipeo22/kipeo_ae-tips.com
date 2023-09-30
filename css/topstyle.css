@@ -263,6 +263,10 @@ footer{
 
 
 @media all and (max-width:770px){
+    section{
+        margin-bottom: 50px;
+    }
+
     .content-container{
         gap: 60px;
     }
@@ -298,12 +302,17 @@ footer{
         gap: 40px;
     }
 
+    .creator{
+        padding: 20px 0;
+    }
+
     h4{
         font-size: 20px;
     }
 
     .creator-box{
         gap: 30px;
+        margin-bottom: 20px;
     }
 
     .creator-text{
