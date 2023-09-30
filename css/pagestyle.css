@@ -425,6 +425,7 @@ h4{
 }
 
 .ToTop a{
+    font-family: 'Noto Sans', sans-serif;
     display: block;
     text-decoration: none;
     color: #f1f1f1;
@@ -484,6 +485,12 @@ footer{
         height: 30px;
         line-height: 30px;
     }
+
+    .gallery img{
+        width: 85%;
+        
+    }
+
 
     .step-text-content{
         padding-top: 10px;
