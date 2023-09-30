@@ -448,7 +448,7 @@ footer{
 
 @media all and (max-width:770px){
     section{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     h3{
@@ -512,12 +512,20 @@ footer{
 
     .step-text-content{
         width: 85%;
+        margin: 20px auto;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
     .step-text p{
         font-size: 12px;
+    }
+
+    .arrow-shape::before{
+        width: 10px;
+        height: 10px;
+        border-top: 3px solid #31294c;
+	    border-right: 3px solid #31294c;
     }
 
     .other-container{
