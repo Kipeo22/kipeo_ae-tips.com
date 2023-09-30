@@ -8,6 +8,29 @@ body{
     background-color: #EDE2F3;
 }
 
+.wrap{
+    overflow: hidden;
+    position: relative;
+}
+
+.bg1{
+    position: absolute;
+    width: 55%;
+    z-index: -1;
+    top: 60%;
+    left: -250px;
+    transform: rotate(-95deg);
+}
+
+.bg2{
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    top: 25%;
+    right: -150px;
+    transform: rotate(-95deg);
+}
+
 section{
     margin-bottom: 120px;
 }
